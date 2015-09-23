@@ -14,6 +14,6 @@ Los códigos realizados en el grupo de estudio son agregados en este repositorio
 * El nombre del archivo debe ser: "ID_NombreEjercicio" en los ejercicios subidos a las plataformas que asignan ID: Uva, Coj, Spoj, etc. En ejercicios de competencias, el nombre debe ser solo "NombreEjercicio".
 * Se admiten diferentes soluciones al mismo ejercicio. Si las dos soluciones son en el mismo lenguaje, no es necesario cambiar el nombre, en caso contrario, nombrar los archivos como "ID_NombreEjercicioV2", o V3, o la versión que corresponda.
 * Se admite dentro del código todos los comentarios inline ( // ) y multiline ( /*  */ ) que considere pertinentes.
-* Cada solución, independiente del lenguaje debe contar con la siguiente meta-descripción justo antes de iniciar el código:
+* Cada solución, independiente del lenguaje debe contar con la siguiente meta-descripción justo antes de iniciar el código: [Metadescripción](https://github.com/ProgramacionCompetitivaUFPS/soluciones/blob/master/firma.java)
 
 
