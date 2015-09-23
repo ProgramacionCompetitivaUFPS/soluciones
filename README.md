@@ -16,12 +16,4 @@ Los códigos realizados en el grupo de estudio son agregados en este repositorio
 * Se admite dentro del código todos los comentarios inline ( // ) y multiline ( /*  */ ) que considere pertinentes.
 * Cada solución, independiente del lenguaje debe contar con la siguiente meta-descripción justo antes de iniciar el código:
 
-/********************************************************************
- * Ejercicio: Nombre del ejercicio                                  *
- * Url: Link al enunciado del ejercicio                             *
- * Lenguaje: java, c o c++                                          *
- * Autor: Nombre de la persona o equipo                             *
- * Fecha: DD-MM-AAAA                                                *
- * Comentarios: Si aplica, de lo contrario, eliminar                *
- *  esta linea.                                                     *
- *******************************************************************/
+
