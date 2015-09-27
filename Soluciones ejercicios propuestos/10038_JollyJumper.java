@@ -1,6 +1,7 @@
 /********************************************************************
  * Ejercicio: Jolly Jumper                                          *
- * Url: https://uva.onlinejudge.org/index.php?option=com_           * onlinejudge&Itemid=8&category=24&page=show_problem&problem=979      *
+ * Url: https://uva.onlinejudge.org/index.php?option=com_           * 
+ * onlinejudge&Itemid=8&category=24&page=show_problem&problem=979   *
  * Lenguaje: java                                                   *
  * Autor: Crysel Ayala                                              *
  * Fecha: 24-09-2015                                                *
