@@ -1,3 +1,11 @@
+/********************************************************************
+ * Ejercicio: Karel the Robot		                                *
+ * Url: https://acm.javeriana.edu.co/maratones/2015/06              *
+ * Lenguaje: c++                                                    *
+ * Autor: Bhaskara's Formulae (Melissa Delgado - Cristhian León -   *
+ * Gerson Lázaro )                                                  *
+ *******************************************************************/
+
 #include <cstdio>
 #include <vector>
 #include <string>
@@ -25,7 +33,6 @@ void init(){
 }
 
 bool dfs(int x, int y, int dir, int insActual){
-	// printf("LLEGUE X:%i  Y:%i,  DIR:%i,   INS:%i\n", x,y,dir,insActual);
 	if(pos[x][y]=='E' || path[x][y][dir][insActual]==1){
 		return true;
 	}
@@ -118,7 +125,6 @@ int main(){
 			
 			for(i=1; i<=a; i++){
 				for(j=1; j<=b; j++){
-					// printf("X:%i  Y:%i ESTADO:%i\n", i, j, path[i][j][0][0]);
 					if(path[i][j][0][0]==1) alcanzados++;
 				}
 			}

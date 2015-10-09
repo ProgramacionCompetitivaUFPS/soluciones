@@ -1,14 +1,16 @@
+/********************************************************************
+ * Ejercicio: Kolonie				                                *
+ * Url: https://acm.javeriana.edu.co/maratones/2015/06              *
+ * Lenguaje: c++                                                    *
+ * Autor: Bhaskara's Formulae (Melissa Delgado - Cristhian León -   *
+ * Gerson Lázaro )                                                  *
+ *******************************************************************/
+
 #include <cstdio>
 #include <map>
 #include <vector>
 #include <algorithm>
 #define Point pair<int,int>
-
-/*
- * @author Bashkara's Formulae (team Candelaria):
- *      Gerson Lázaro - Melissa Delgado - Cristhian León
- *      UFPS
-*/
 
 using namespace std;
 

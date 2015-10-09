@@ -1,3 +1,11 @@
+/********************************************************************
+ * Ejercicio: Lode					                                *
+ * Url: https://acm.javeriana.edu.co/maratones/2015/06              *
+ * Lenguaje: c++                                                    *
+ * Autor: Bhaskara's Formulae (Melissa Delgado - Cristhian León -   *
+ * Gerson Lázaro )                                                  *
+ *******************************************************************/
+
 #include <iostream>
 #include <cmath>
 #include <vector>

@@ -1,14 +1,17 @@
+/********************************************************************
+ * Ejercicio: Self Intersecting Path                                *
+ * Url: https://acm.javeriana.edu.co/maratones/2015/06              *
+ * Lenguaje: c++                                                    *
+ * Autor: Bhaskara's Formulae (Melissa Delgado - Cristhian León -   *
+ * Gerson Lázaro )                                                  *
+ *******************************************************************/
+
 #include <cstdio>
 #include <deque>
 #define Point pair<long long int,long long int> //x,y
 
-/*
- * @author Bashkara's Formulae (team Candelaria):
- *      Gerson Lázaro - Melissa Delgado - Cristhian León - Brian Giraldo
- *      UFPS
-*/
-
 using namespace std;
+
 deque< pair<Point,Point> > coordenadas;
 long long int  dx[4]={0,1,0,-1};
 long long int dy[4]={1,0,-1,0};

@@ -1,14 +1,15 @@
+/********************************************************************
+ * Ejercicio: More or Less Accurate                                 *
+ * Url: https://acm.javeriana.edu.co/maratones/2015/06              *
+ * Lenguaje: c++                                                    *
+ * Autor: Bhaskara's Formulae (Melissa Delgado - Cristhian León -   *
+ * Gerson Lázaro )                                                  *
+ *******************************************************************/
+
 #include <iostream>
 #define endl "\n"
 
-/**
- * @author Bashkara's Formulae (team Candelaria):
- *      Gerson Lázaro - Melissa Delgado - Cristhian León
- *      UFPS
-*/
-
 using namespace std;
-
 
 int main(){
     ios_base::sync_with_stdio(false);
