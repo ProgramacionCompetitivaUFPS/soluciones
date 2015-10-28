@@ -38,7 +38,7 @@ void bfs(){
 		aux=buttons[i];
 		aux=(aux<0)?0:aux;
 
-		estados[aux]++;
+		estados[aux]=1;
 		q.push(State {aux, 1});
 	}
 
@@ -83,8 +83,13 @@ int main(){
 		for(i=0; i<n; i++){
 			cin>>buttons[i];
 		}
-		bfs();
-		cout<<cb<<" "<<ttotal-t<<"\n";
+		if(t==0){
+			cout<<"0 0"<<"\n";
+		}else{
+			bfs();
+			cout<<cb<<" "<<ttotal-t<<"\n";
+		}
+		
 		tc--;
 	}
 }
