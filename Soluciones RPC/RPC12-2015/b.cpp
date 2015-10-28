@@ -10,92 +10,81 @@
 #include <iostream>
 #include <algorithm>
 #include <queue>
-#include <climits>
- #include <map>
+#include <map>
+
+/*
+	'Cause I'm back
+	Yes, I'm back
+	Well, I'm back ~( '.' ~)
+*/
 
 using namespace std;
 
-int ady[17];
-int n, t, tt, cont;
+int n, t, cb, ttotal;
+int buttons[17];
 map<int, int> estados;
 
 struct State{
-	//int buttonV;
-	int time;
-	int bCount;
+	int tiempo;
+	int cont;
 };
 
-void microWave(){
+void bfs(){
 	queue<State> q;
-	int tMayor, bcMayor;
-	int i, tm, bc, aux, x;
-	bool flag=false;
-	
-	tMayor=bcMayor=INT_MAX;
+	int i, aux, tt, c;
+	ttotal=cb=3650;
+
 	for(i=0; i<n; i++){
-		x=ady[i]<0?0:ady[i];
-		estados[x]++;
-		q.push(State { x, 1});
-		//q.push(State {ady[i], x, 1});
+		aux=buttons[i];
+		aux=(aux<0)?0:aux;
+
+		estados[aux]++;
+		q.push(State {aux, 1});
 	}
 
 	while(!q.empty()){
-		//bv=q.front().buttonV;
-		tm=q.front().time;
-		bc=q.front().bCount+1;
+		tt=q.front().tiempo;
+		c=q.front().cont;
 		q.pop();
 
+		if(tt==t){
+			ttotal=tt;
+			cb=c;
+			return;
+		}
+
+		if(tt>t){
+			if(tt<ttotal){
+				ttotal=tt;
+				cb=c;
+			}
+		}
+
 		for(i=0; i<n; i++){
-			aux=tm+ady[i];
-			
-			if(aux==t){
-				tt=aux;
-				cont=bc;
-				flag=true;
-				break;
-			}
-
-			if(aux<0)
-				aux=0;
-
-			if(aux>3600)
-				aux=3600;
-
-			if(aux>t){
-				if(aux<tMayor){
-					tt=tMayor=aux;
-					cont=bcMayor=bc;
-				}
-			}
+			aux=tt+buttons[i];
+			aux=(aux>3600?3600:aux);
+			aux=(aux<0?0:aux);
 
 			if(estados[aux]==0){
 				estados[aux]++;
-				q.push(State {aux, bc});
-				//q.push(State {ady[i], tm, bc});
+				q.push(State {aux, c+1});
 			}
-			
-		}
-
-		if(flag){
-			break;
 		}
 	}
 }
 
-int main() {
-	int tc, i, j, x;
+int main(){
+	int tc, i;
 	cin>>tc;
+
 	while(tc>0){
-		estados.clear();
 		cin>>n>>t;
+		estados.clear();
 		for(i=0; i<n; i++){
-			cin>>x;
-			ady[i]=x;
+			cin>>buttons[i];
 		}
-		tt=cont=0;
-		microWave();
-		cout<<cont<<" "<<tt-t<<"\n";
+		bfs();
+		cout<<cb<<" "<<ttotal-t<<"\n";
 		tc--;
 	}
-	return 0;
 }
