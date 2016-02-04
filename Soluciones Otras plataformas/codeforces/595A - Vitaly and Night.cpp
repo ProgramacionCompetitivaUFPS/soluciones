@@ -3,7 +3,7 @@
  * Url: http://codeforces.com/problemset/problem/595/A              *
  * Lenguaje: c++                                                    *
  * Autor: Gerson Lázaro                                             *
- * Fecha: 30-11-2015                                                *                                                                   *
+ * Fecha: 30-11-2015                                                * 
  *******************************************************************/
 
 
