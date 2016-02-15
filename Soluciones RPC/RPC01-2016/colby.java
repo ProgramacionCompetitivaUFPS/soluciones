@@ -5,7 +5,6 @@
  * Autor: Si WA Meli nos golpea (Melissa Delgado - Daniel Vega -    *
  * Gerson Lázaro                                                    *
  * Fecha: 14-02-2016                                                *
- * Comentarios: Cambiar nombre del archivo a colby.java             *
  *******************************************************************/
  
  
