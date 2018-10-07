@@ -1,7 +1,8 @@
+
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-/* https://www.urionlinejudge.com.br/judge/es/problems/view/1068 */
+/*https://www.urionlinejudge.com.br/judge/es/problems/view/1068*/
 public class Main {
 
     /**
