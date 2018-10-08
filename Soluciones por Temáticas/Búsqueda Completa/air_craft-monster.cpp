@@ -29,7 +29,6 @@ if(v1==vp && xp1==xp && ap1==ap && dp1==dp){
    premio aux (v1, xp1, ap1, dp1);
   
    if(v1 > 0){
-   //cout<<"entro "<<ini<<" "<<ref<<" "<<v1<<" "<<xp1<<" "<<ap1<<" "<<dp1<<" "<<vp<<" "<<xp<<" "<<ap<<" "<<dp<<endl;
    if(ref== 0) lista10.push_back(aux);
    else        lista20.push_back(aux);
    }
@@ -71,12 +70,9 @@ int main() {
 		
 	sort(lista10.begin(), lista10.end());
 	sort(lista20.begin(), lista20.end());
-/*	for(int i=0; i<lista20.size(); i++){
-		cout<<lista20[i].v<<" "<<lista20[i].x<<" "<<lista20[i].a<<" "<<lista20[i].d<<endl;
-	}cout<<endl;*/
 	if(v){
 	cout<<"POSSIBLE\n";	
-	}else{//probar 2 listas
+	}else{
 	   int actual = lista20.size()-1;
 	   for(int i=0; i<lista10.size() && !v && actual>=0; i++){
 	      for(int j=actual; j>=0; j--){
