@@ -40,11 +40,7 @@ int main() {
 				}
 			getline(cin,s);
 		} 
-	/*	for(int i=0; i<X; i++){
-			for(int j=0; j<Y; j++){
-				cout<<grid[j][i];
-			}cout<<endl;
-		}*/
+	
 		while(s!=""){
 			istringstream iss(s);
 			int subs; 
@@ -52,7 +48,7 @@ int main() {
 			while (iss >> subs) {
 				nums.push_back(subs);
 			
-			} //cout<<grid[nums[0]-1][nums[1]-1]<<endl;
+			} 
 			if(grid[nums[0]-1][nums[1]-1] != -2){
 				cout<<grid[nums[0]-1][nums[1]-1]<<"\n";
 			}else{
