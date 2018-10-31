@@ -1,6 +1,8 @@
+
 #include <bits/stdc++.h>
 using namespace std;
-/*https://www.urionlinejudge.com.br/judge/es/problems/view/1162*/
+
+//https://www.urionlinejudge.com.br/judge/es/problems/view/1162
 
 static int men(int a [], int ini, int fin) {
     int men = a[ini];
@@ -11,12 +13,10 @@ static int men(int a [], int ini, int fin) {
             posmen = i;
         }
     }
-    //    cout<<posmen<<"\n";
     return posmen;
 }
 
-int main() {
-
+int main() { 
 
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
@@ -41,7 +41,6 @@ int main() {
                 contador += (posmen - s);
                 int o=s;
                 for (int y = posmen ; y >= s; y--) {
-                    //swap
                     int aux = trenes[y];
                     trenes[y] = trenes[y-1];
                     trenes[y-1] = aux;
@@ -55,4 +54,12 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
 
