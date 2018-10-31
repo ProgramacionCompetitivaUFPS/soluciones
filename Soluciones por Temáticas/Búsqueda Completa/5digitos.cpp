@@ -17,7 +17,7 @@ int main() {
 		
 			if(dividendo>=10000 && dividendo<99999){
 			string f="";
-		//	int r= dividendo*10000+divisor;
+		
 			stringstream convert; 
 			convert << dividendo;
 			f+=  convert.str();
@@ -32,13 +32,10 @@ int main() {
 				a++;
 				activado[0]=true;
 			}
-		//	cout<< dividendo<<" / "<<"0"<<divisor<<" = "<<n<<endl;
+		
 				int sumadig=0;
-			//	cout<<f<<endl;
+			
 				for(int i=0; i<f.size(); i++){
-			//	if(divisor<10000 && f[i]=='0'){
-			//		break;
-			//	}
 					
 					int uva= f[i]-48;
 					if(!activado[uva]){
@@ -51,7 +48,6 @@ int main() {
 				
 					
 				} 
-			//	cout<<sumadig<<endl;
 				if(a==10){
 				cont++;
 				
@@ -61,13 +57,8 @@ int main() {
 					}
 					cout<<divisor<<endl; 
 				}	
-				
-			
-				
+	
 			}
-		
-			
-			
 			
 		}
 		
