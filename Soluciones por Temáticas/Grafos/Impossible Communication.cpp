@@ -4,7 +4,7 @@ using namespace std;
 /*https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=5225*/
 
 int v, e; 
-const int MAX = 50005; // Máxima cantidad de nodos
+const int MAX = 50005; 
 int dfs_low[MAX];
 int dfs_num[MAX];
 bool marked[MAX];
@@ -16,8 +16,8 @@ void init() {
     cantSCC = 0; //Tarjan
    
     for( int j = 0; j <= v; j++ ) {
-        ady[j].clear(); //Lista de Adyacencia
-        marked[j] = 0; //Estructura auxiliar para marcar los nodos ya visitados
+        ady[j].clear(); 
+        marked[j] = 0; 
         dfs_num[j] = -1;
         dfs_low[j] = 0;
     }
@@ -45,20 +45,6 @@ void tarjanSCC( int u ){
 		
 	if( dfs_low[u] == dfs_num[u] ){
 		cantSCC++;
-		/*
-        /* ********************************************************* */
-        /* Esta seccion se usa para imprimir las componentes conexas 
-		cout << "COMPONENTE CONEXA #" << cantSCC << "\n";
-		while( true ){
-			v = s.back();
-			s.pop_back();
-			marked[v] = false;
-			cout << v << " ";
-			if( u == v ) break;
-		}
-		cout<<endl;
-        ********************************************************** */
-        
 	}	
 }
 
@@ -85,7 +71,7 @@ int main (){
 	    		ady[c-1].push_back(b-1);
 	    	}
 	    }
-	    for( int i = 0; i < v; i++ ){ //Por si el grafo no es conexo
+	    for( int i = 0; i < v; i++ ){ 
 	        if( dfs_num[i] == -1 ){
 	            dfsCont = 0;
 	            s.clear();
