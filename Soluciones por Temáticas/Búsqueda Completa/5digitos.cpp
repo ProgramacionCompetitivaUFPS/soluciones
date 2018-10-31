@@ -75,14 +75,9 @@ int main() {
 		cout<<"IMPOSIBLE"<<endl;
 		
 		}
-//if(cases>0){
-//if(cont<1){
-//cout<<"\n"<<endl;	
-//}else{
+
 	cout<<endl;
-//}	
-//}
-//cout<<n<<" "<<cont<<endl;
+
 }
 	return 0;
 }
